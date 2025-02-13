@@ -1,9 +1,9 @@
-USE PV_319_Import;
+п»їUSE PV_319_Import;
 GO
 
 SELECT
-			discipline_name		AS N'Дисциплина',
-			COUNT(teacher_id)	AS N'Количество преподавателей'
+			discipline_name		AS N'Р”РёСЃС†РёРїР»РёРЅР°',
+			COUNT(teacher_id)	AS N'РљРѕР»РёС‡РµСЃС‚РІРѕ РїСЂРµРїРѕРґР°РІР°С‚РµР»РµР№'
 FROM		Teachers, Disciplines, TeachersDisciplinesRelation
 WHERE		teacher		=	teacher_id
 AND			discipline	=	discipline_id
@@ -11,8 +11,8 @@ GROUP BY	discipline_name
 ;
 
 SELECT
-			discipline_name		AS N'Дисциплина',
-			FORMATMESSAGE(N'%s %s %s', last_name, first_name, middle_name)	AS N'Преподаватель'
+			discipline_name		AS N'Р”РёСЃС†РёРїР»РёРЅР°',
+			FORMATMESSAGE(N'%s %s %s', last_name, first_name, middle_name)	AS N'РџСЂРµРїРѕРґР°РІР°С‚РµР»СЊ'
 
 FROM		Teachers, Disciplines, TeachersDisciplinesRelation
 WHERE		teacher		=	teacher_id
