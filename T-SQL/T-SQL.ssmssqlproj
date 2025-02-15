@@ -22,17 +22,41 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="SQLQuery0 - SELECT FROM Schedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0 - SELECT FROM Schedule.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1 - INSERT PV_319.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - INSERT PV_319.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1 - Schedule.sql">
+        <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroup .sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1 - Schedule.sql</FullPath>
+          <FullPath>SQLQuery2 - CREATE PROC PrintScheduleForGroup .sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - CREATE PROC ScheduleForStacionarGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - CREATE PROC ScheduleForStacionarGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - Schedule procedures test.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - Schedule procedures test.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - Schedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - Schedule.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
