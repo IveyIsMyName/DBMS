@@ -34,12 +34,6 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - INSERT PV_319.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery1.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1.sql</FullPath>
-        </FileNode>
         <FileNode Name="SQLQuery2 - CalculateSalary test.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
@@ -58,11 +52,11 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery2 - CREATE PROC PringScheduleByDates.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroup .sql">
+        <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroup.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE PROC PrintScheduleForGroup .sql</FullPath>
+          <FullPath>SQLQuery2 - CREATE PROC PrintScheduleForGroup.sql</FullPath>
         </FileNode>
         <FileNode Name="SQLQuery2 - CREATE PROC PrintScheduleForGroupPeriod.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
@@ -105,6 +99,12 @@
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery3 - CREATE TABLE Salary.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7 - CREATE PROCEDURE NewYear.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - CREATE PROCEDURE NewYear.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

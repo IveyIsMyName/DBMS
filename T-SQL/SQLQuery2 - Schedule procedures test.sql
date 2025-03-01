@@ -1,9 +1,10 @@
 USE PV_319_Import;
+SET DATEFIRST 1;
 GO
 
 --EXEC sp_SetScheduleForStacionarGroup N'PV_319', N'Разработка Windows-приложений на языке C++', N'Ковтун', N'2024-10-08', N'18:30';
 
-EXEC sp_PrintScheduleForGroup N'PD_321';
+--EXEC sp_PrintScheduleForGroup N'PD_321';
 
 --SELECT * FROM Disciplines;
 --EXEC sp_PrintScheduleByDates
@@ -24,14 +25,8 @@ EXEC sp_PrintScheduleForGroup N'PD_321';
 --EXEC @salary = sp_CountTeachersMonthSalary N'Ковтун', 2024, 06;
 --PRINT (@salary);
 
---EXEC sp_ScheduleForBaseStacionarGroup
---N'PV_319',
---N'Процедурное программирование %',
---N'Ковтун',
---N'2023-11-23',
---'18:30',
---2, 4, 6, 2, 1;
 
+--DROP PROCEDURE sp_ScheduleForBaseStacionarGroup;
 --DELETE FROM Schedule
 --WHERE 
 --    [group] = (SELECT group_id FROM Groups WHERE group_name = N'PD_321')
@@ -39,3 +34,27 @@ EXEC sp_PrintScheduleForGroup N'PD_321';
 --    AND teacher = (SELECT teacher_id FROM Teachers WHERE last_name = N'Покидюк')
 
 --SELECT * FROM Schedule;
+
+--EXEC sp_ScheduleForBaseStacionarGroup
+--N'PV_319',
+--N'Hardware%',
+--N'Кобылинский',
+--N'2023-11-25',
+--'18:30',
+--6, 2, 0;
+
+--EXEC sp_ScheduleForBaseStacionarGroup
+--N'PV_319',
+--N'Процедурное программирование %',
+--N'Ковтун',
+--N'2023-11-23',
+--'18:30',
+--4,2,1;
+
+--EXEC sp_PrintScheduleForGroup N'PV_319'
+
+--==================================================--
+
+--EXEC sp_AddNewYearHolidaysFor 2025;
+
+SELECT * FROM DaysOFF;
