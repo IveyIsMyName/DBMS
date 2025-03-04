@@ -55,6 +55,8 @@ GO
 
 --==================================================--
 
---EXEC sp_AddNewYearHolidaysFor 2025;
+--EXEC sp_AddNewYearHolidaysFor 2024;
+--SELECT * FROM Holidays;
 
+--EXEC sp_AddHolidays 2025, N'Новогодние каникулы';
 SELECT * FROM DaysOFF;

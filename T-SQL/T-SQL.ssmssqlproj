@@ -100,6 +100,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery3 - CREATE TABLE Salary.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery7 - CREATE PROCEDURE AddHolidays.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - CREATE PROCEDURE AddHolidays.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7 - CREATE PROCEDURE NewYear.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
