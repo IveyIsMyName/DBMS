@@ -46,11 +46,23 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - GetGroupID.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery7 - GetHolidayID.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - GetHolidayID.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7 - GetHolidaysDuration.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery7 - GetHolidaysDuration.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7 - GetHolidaysStartDate.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - GetHolidaysStartDate.sql</FullPath>
         </FileNode>
         <FileNode Name="SQLQuery7 - GetNewYearHolidaysStartDate.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
