@@ -67,3 +67,5 @@ GO
 
 --SELECT @@VERSION;
 --EXEC sp_GetGroupWeekDays N'PV_319'
+--PRINT (dbo.GetLearningDaysFor(N'PV_319'));
+EXEC sp_GetLearningDaysFor N'PV_319';
