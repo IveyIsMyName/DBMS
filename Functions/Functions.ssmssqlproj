@@ -46,6 +46,18 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 - GetGroupID.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery2 - GetLastForGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - GetLastForGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7 - GetEasterDate.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - GetEasterDate.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7 - GetHolidayID.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:IVEY-PC\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>IVEY-PC\SQLEXPRESS</AssociatedConnSrvName>

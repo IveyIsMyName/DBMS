@@ -24,27 +24,31 @@ BEGIN
 			PRINT(DATENAME(WEEKDAY, @date));
 			PRINT(@lesson);
 			PRINT(@time);
+
+			IF NOT EXISTS (SELECT [date] FROM DaysOFF WHERE [date] = @date)
+			BEGIN
 			--First lesson per day:
-			IF NOT EXISTS (SELECT * FROM Schedule WHERE [group]=@group AND discipline=@discipline AND [date]=@date AND [time]=@time)
-			BEGIN
-				INSERT Schedule
-						([group], discipline, teacher, [date], [time], spent)
-				VALUES	(@group, @discipline, @teacher, @date, @time, IIF(@date < GETDATE(), 1, 0));
-			--IIF(condition, value_1, value_2);
-			END
-			SET @lesson = @lesson+1;
+				IF NOT EXISTS (SELECT * FROM Schedule WHERE [group]=@group  AND [date]=@date AND [time]=@time) --AND discipline=@discipline
+				BEGIN
+					INSERT Schedule
+							([group], discipline, teacher, [date], [time], spent)
+					VALUES	(@group, @discipline, @teacher, @date, @time, IIF(@date < GETDATE(), 1, 0));
+				--IIF(condition, value_1, value_2);
+					SET @lesson = @lesson+1;
+				END
 	
-			PRINT(@lesson);
-			PRINT(DATEADD(MINUTE, 95, @time));
+				PRINT(@lesson);
+				PRINT(DATEADD(MINUTE, 95, @time));
 	
-			--Second lesson per day:
-			IF NOT EXISTS (SELECT * FROM Schedule WHERE [group]=@group AND discipline=@discipline AND [date]=@date AND [time]=DATEADD(MINUTE, 95, @time))
-			BEGIN
-				INSERT	Schedule
-						([group], discipline, teacher, [date], [time], spent)
-				VALUES	(@group, @discipline, @teacher, @date, DATEADD(MINUTE, 95, @time), IIF(@date < GETDATE(), 1, 0));
+				--Second lesson per day:
+				IF NOT EXISTS (SELECT * FROM Schedule WHERE [group]=@group  AND [date]=@date AND [time]=DATEADD(MINUTE, 95, @time)) --AND discipline=@discipline
+				BEGIN
+					INSERT	Schedule
+							([group], discipline, teacher, [date], [time], spent)
+					VALUES	(@group, @discipline, @teacher, @date, DATEADD(MINUTE, 95, @time), IIF(@date < GETDATE(), 1, 0));
+					SET @lesson = @lesson+1;
+				END
 			END
-			SET @lesson = @lesson+1;
 			PRINT('------------------------');
 			IF(DATEPART(WEEKDAY, @date) = 6)
 			BEGIN

@@ -24,4 +24,8 @@ GO
 --		ELSE NULL
 --		END;
 
-PRINT(dbo.GetHolidayStartDate(N'8%', 2024));
+--PRINT(dbo.GetHolidayStartDate(N'8%', 2024));
+
+--PRINT(dbo.GetEasterDate(2011));
+
+PRINT (dbo.GetLastDateForGroup(N'PV_319'));
