@@ -1,8 +1,8 @@
 USE PV_319_Import;
 GO
 
---ALTER FUNCTION GetLearningDaysFor(@group_name NVARCHAR(10))RETURNS NVARCHAR(50)
-ALTER PROCEDURE sp_GetLearningDaysFor(@group_name NVARCHAR(10))
+ALTER FUNCTION GetLearningDaysFor(@group_name NVARCHAR(10))RETURNS NVARCHAR(50)
+--ALTER PROCEDURE sp_GetLearningDaysFor(@group_name NVARCHAR(10))
 AS
 BEGIN
 	DECLARE
@@ -21,7 +21,7 @@ BEGIN
 	@mask	AS TINYINT		=(SELECT weekdays FROM Groups WHERE group_name = @group_name),
 	@days	AS NVARCHAR(50) =N'';
 
-	PRINT @mask;
+	--PRINT @mask;
 
 	DECLARE
 	@day	AS TINYINT	= 0;
@@ -37,6 +37,7 @@ BEGIN
 		BEGIN
         SET @days = LEFT(@days, LEN(@days) - 1);
 		END
-	PRINT  @days;
+	--PRINT  @days;
+	RETURN @days;
 END
 	
